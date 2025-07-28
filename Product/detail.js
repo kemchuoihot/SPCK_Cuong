@@ -96,7 +96,7 @@ function setupAddToCart() {
     localStorage.setItem("cart", JSON.stringify(cart));
 
     await addToFirebaseCart(pid);
-    window.location.href = "/Product/cart.html";
+    window.location.href = "../Product/cart.html";
   });
 }
 
