@@ -1,0 +1,123 @@
+/* register.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  html, body {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  body {
+    background-image: url("bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .register-container {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    transition: transform 0.3s ease;
+  }
+  
+  .register-container:hover {
+    transform: scale(1.01);
+  }
+  
+  .register-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #d63384;
+  }
+  
+  .register-container .logo {
+    display: block;
+    margin: 0 auto 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #d63384;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  .form-group {
+    position: relative;
+    margin-bottom: 18px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 12px 40px 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    border-color: #d63384;
+    outline: none;
+  }
+  
+  .form-group i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 16px;
+  }
+  
+  .select-wrapper {
+    position: relative;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #d63384;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #c31b6c;
+  }
+  
+  .extra-links {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .extra-links a {
+    color: #d63384;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .extra-links a:hover {
+    text-decoration: underline;
+  }
+  

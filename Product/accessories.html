@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessories - Cupid Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="accessories.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand d-flex align-items-center" href="/Homepage/homepage.html">
+        <img src="/Login/register/logo.png" alt="Cupid Logo" width="40" height="40" class="rounded-circle me-2">
+        <strong class="text-danger">Cupid Shoes</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="/Homepage/homepage.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="shoes.html">Shoes</a></li>
+          <li class="nav-item"><a class="nav-link" href="clothes.html">Clothes</a></li>
+          <li class="nav-item"><a class="nav-link" href="accessories.html">Accessories</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <i class="fas fa-search nav-icon"></i>
+          <a href="/Login/register/register.html" class="nav-icon text-dark">
+            <i class="fas fa-user"></i>
+          </a>
+          <a href="/Product/cart.html" class="nav-icon text-dark">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <style>
+    .nav-icon {
+      color: #333;
+      transition: color 0.3s ease;
+      cursor: pointer;
+    }
+    .nav-icon:hover {
+      color: #d63384;
+    }
+    .nav-link {
+      font-weight: 500;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+    .nav-link:hover,
+    .nav-link.active {
+      color: #d63384;
+    }
+  </style>
+
+  <!-- Product List -->
+  <div class="container-fluid py-5 bg-white">
+    <div class="row">
+      <!-- Sidebar Filters -->
+      <aside class="col-md-3 px-4 border-end">
+        <h5 class="mb-3">Filter By</h5>
+        <div class="accordion" id="filterAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#typeFilter">Type</button>
+            </h2>
+            <div id="typeFilter" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <div><input type="checkbox" id="watch"> <label for="watch">Watch</label></div>
+                <div><input type="checkbox" id="ring"> <label for="ring">Ring</label></div>
+                <div><input type="checkbox" id="glasses"> <label for="glasses">Glasses</label></div>
+                <div><input type="checkbox" id="wallet"> <label for="wallet">Wallet</label></div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#materialFilter">Material</button>
+            </h2>
+            <div id="materialFilter" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <div><input type="checkbox" id="leather"> <label for="leather">Leather</label></div>
+                <div><input type="checkbox" id="metal"> <label for="metal">Metal</label></div>
+                <div><input type="checkbox" id="plastic"> <label for="plastic">Plastic</label></div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colorFilter">Colour</button>
+            </h2>
+            <div id="colorFilter" class="accordion-collapse collapse">
+              <div class="accordion-body d-flex flex-wrap gap-2">
+                <span class="badge rounded-pill bg-dark">Black</span>
+                <span class="badge rounded-pill bg-primary">Blue</span>
+                <span class="badge rounded-pill bg-success">Green</span>
+                <span class="badge rounded-pill bg-danger">Red</span>
+                <span class="badge rounded-pill bg-warning text-dark">Yellow</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Product Grid -->
+      <section class="col-md-9">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h4 class="text-danger">Accessories</h4>
+          <div>
+            <label class="me-2">Sort By:</label>
+            <select class="form-select d-inline-block w-auto">
+              <option>Newest</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Name: A-Z</option>
+              <option>Name: Z-A</option>
+            </select>
+          </div>
+        </div>
+        <div class="row g-4" id="productGrid"></div>
+      </section>
+    </div>
+  </div>
+
+    <!-- Footer -->
+  <footer class="bg-dark text-light py-4 text-center mt-auto">
+    <div class="container">
+      <p class="mb-2">&copy; 2025 Cupid Shoes. All rights reserved.</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="#" class="text-light"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-light"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="accessories.js"></script>
+</body>
+</html>

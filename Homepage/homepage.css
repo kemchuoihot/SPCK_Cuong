@@ -1,0 +1,103 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand strong {
+  font-size: 1.5rem;
+}
+
+.carousel-inner {
+  max-height: 500px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 500px;
+  width: 100%;
+}
+
+.carousel-caption h1 {
+  font-size: 2rem;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.card-text {
+  font-size: 1.1rem;
+}
+
+.btn-danger {
+  background-color: #d63384;
+  border-color: #d63384;
+}
+
+.btn-danger:hover {
+  background-color: #c31b6c;
+  border-color: #c31b6c;
+}
+
+.btn-outline-danger {
+  border-color: #d63384;
+  color: #d63384;
+}
+
+.btn-outline-danger:hover {
+  background-color: #d63384;
+  color: white;
+}
+
+footer a {
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ff77b8;
+}
+
+#searchBox {
+  position: absolute;
+  top: 100%;
+  right: 20px;
+  width: 200px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+  z-index: 9999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#searchBox.show {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+  .navbar-brand strong {
+    font-size: 1.25rem;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-text {
+    font-size: 0.95rem;
+  }
+  .carousel-inner, .carousel-item img {
+    max-height: 1000px;
+    height: 500px;
+  }
+}

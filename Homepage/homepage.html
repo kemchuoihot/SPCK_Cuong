@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cupid Store - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="homepage.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand d-flex align-items-center" href="/Homepage/homepage.html">
+        <img src="/Login/register/logo.png" alt="Cupid Logo" width="40" height="40" class="rounded-circle me-2">
+        <strong class="text-danger">Cupid Shoes</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="/Homepage/homepage.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Product/shoes.html">Shoes</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Product/clothes.html">Clothes</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Product/accessories.html">Accessories</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <i class="fas fa-search nav-icon"></i>
+          <a href="/Login/register/register.html" class="nav-icon text-dark">
+            <i class="fas fa-user"></i>
+          </a>
+          <a href="/Product/cart.html" class="nav-icon text-dark">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <style>
+    .nav-icon {
+      color: #333;
+      transition: color 0.3s ease;
+      cursor: pointer;
+    }
+    .nav-icon:hover {
+      color: #d63384;
+    }
+    .nav-link {
+      font-weight: 500;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+    .nav-link:hover,
+    .nav-link.active {
+      color: #d63384;
+    }
+    #searchBox.show {
+      display: block !important;
+    }
+  </style>
+
+  <!-- Carousel Hero -->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="new1.png" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="fw-bold">TỰ HÀO BẢN SẮC CÙNG BST ÁO THUN DẤU ẤN VIỆT NAM</h1>
+          <p>Nơi ba miền đất nước được thể hiện sống động trên từng thiết kế.</p>
+          <a href="#categories" class="btn btn-danger">Browse Collection</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/152ba8115397367.604df88ac7d2d.png" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block">
+          <a href="#featured" class="btn btn-danger">Shop Now</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/152ba8115397367.604df88ac7d2d.png" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block">
+          <a href="#featured" class="btn btn-danger">Shop Now</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Shop by Category -->
+  <section id="categories" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4 text-danger">Shop by Category</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://i.pinimg.com/originals/d6/59/37/d659377a1cf730b60628f149ba012855.jpg" class="card-img-top" alt="Shoes">
+            <div class="card-body">
+              <h5 class="card-title">Shoes</h5>
+              <a href="/Product/shoes.html" class="btn btn-outline-danger">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="clothes brand.png" class="card-img-top" alt="Clothes">
+            <div class="card-body">
+              <h5 class="card-title">Clothes</h5>
+              <a href="/Product/clothes.html" class="btn btn-outline-danger">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="accessories brand.png" class="card-img-top" alt="Accessories">
+            <div class="card-body">
+              <h5 class="card-title">Accessories</h5>
+              <a href="/Product/accessories.html" class="btn btn-outline-danger">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section id="featured" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4 text-danger">New Arrivals</h2>
+      <div class="row g-4">
+        <!-- Dynamically loaded from JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="mb-3 text-danger">Stay in the Loop</h2>
+      <p class="mb-4">Sign up to get the latest drops & updates.</p>
+      <form class="row justify-content-center">
+        <div class="col-md-4">
+          <input type="email" class="form-control" placeholder="Enter your email" required />
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-danger">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4 text-center">
+    <div class="container">
+      <p class="mb-2">&copy; 2025 Cupid Vietnam. All rights reserved.</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="#" class="text-light"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-light"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="homepage.js"></script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,72 @@
+/* detail.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  img {
+    border-radius: 16px;
+    max-height: 500px;
+    object-fit: cover;
+  }
+  
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #d63384;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  select.form-select {
+    border-radius: 10px;
+    font-size: 14px;
+
+    width: auto;
+    display: inline-block;
+  }
+  
+  .btn-danger {
+    background-color: #d63384;
+    border: none;
+    padding: 10px 24px;
+    font-weight: 600;
+    border-radius: 10px;
+  }
+  
+  .btn-danger:hover {
+    background-color: #b2276b;
+  }
+  
+  .btn-outline-secondary {
+    border-radius: 10px;
+  }
+  
+  footer {
+    margin-top: 60px;
+    background: #222;
+    color: #fff;
+  }
+  
+  footer a {
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  footer a:hover {
+    color: #d63384;
+  }
+  
+  .nav-icon {
+    color: #333;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .nav-icon:hover {
+    color: #d63384;
+  }
+  
